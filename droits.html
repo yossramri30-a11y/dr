@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DROITO | Tous les droits</title>
+    <meta
+      name="description"
+      content="Bibliothèque complète des droits des designers en Tunisie avec images, résumés pratiques, réflexes et sources officielles."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="rights-page">
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Retour à l'accueil">
+          <strong>DROITO</strong>
+        </a>
+        <nav class="top-nav" aria-label="Navigation principale">
+          <a href="index.html#parcours">Profils</a>
+          <a class="is-current" href="droits.html">Droits</a>
+          <a href="index.html#situations">Situations</a>
+          <a href="index.html#checklist">Checklist</a>
+          <a href="index.html#contacts">Contacts</a>
+        </nav>
+        <a class="header-cta" href="#bibliotheque" aria-label="Aller à la bibliothèque">
+          <span aria-hidden="true">↓</span>
+        </a>
+      </header>
+
+      <main>
+        <section class="detail-hero-frame rights-library-hero">
+          <div class="detail-hero-board rights-library-board">
+            <div class="detail-hero-copy">
+              <p class="section-kicker">Bibliothèque complète</p>
+              <h1>Tous les droits, chacun avec son image et son explication</h1>
+              <p class="detail-hero-text">
+                Cette page rassemble l'ensemble des droits utiles à un designer en Tunisie :
+                droit d'auteur, contrats, preuve, marque, dessin ou modèle, CNSS et recours.
+              </p>
+              <div class="detail-hero-actions">
+                <a class="button hero-signup" href="#bibliotheque">Explorer les droits</a>
+                <a class="button button-secondary" href="index.html">Retour à l'accueil</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="bibliotheque" class="control-panel" aria-label="Recherche et filtres">
+          <label class="search-box" for="search">
+            <span>Rechercher un droit</span>
+            <input
+              id="search"
+              type="search"
+              placeholder="Ex. logo, contrat, freelance, CNSS, marque..."
+              autocomplete="off"
+            />
+          </label>
+
+          <div class="filter-group" id="filters" aria-label="Filtres thématiques">
+            <button class="filter-chip is-active" data-filter="all" type="button">Tout</button>
+            <button class="filter-chip" data-filter="copyright" type="button">Droit d'auteur</button>
+            <button class="filter-chip" data-filter="contract" type="button">Contrats</button>
+            <button class="filter-chip" data-filter="freelance" type="button">Freelance</button>
+            <button class="filter-chip" data-filter="employee" type="button">Salarié</button>
+            <button class="filter-chip" data-filter="brand" type="button">Marques</button>
+            <button class="filter-chip" data-filter="product" type="button">Produit</button>
+            <button class="filter-chip" data-filter="social" type="button">CNSS</button>
+            <button class="filter-chip" data-filter="dispute" type="button">Litiges</button>
+          </div>
+        </section>
+
+        <section class="section-block">
+          <div class="section-heading">
+            <p class="section-kicker">Page détaillée</p>
+            <h2>Chaque droit expliqué clairement</h2>
+            <p>
+              Chaque carte reprend le droit, l'image associée, ce que cela change pour vous,
+              le bon réflexe et les sources utiles pour aller plus loin.
+            </p>
+          </div>
+          <div id="rights-grid" class="rights-grid" aria-live="polite"></div>
+          <p id="empty-state" class="empty-state" hidden>
+            Aucun résultat avec ce filtre. Essayez un autre mot-clé ou revenez à
+            <button class="inline-button" data-reset-search type="button">tout</button>.
+          </p>
+        </section>
+
+        <section id="sources" class="section-block sources-block">
+          <div class="section-heading">
+            <p class="section-kicker">Traçabilité</p>
+            <h2>Sources utilisées</h2>
+            <p>
+              La priorité a été donnée aux portails officiels tunisiens, à l'INNORPI,
+              à l'OTDAV, à la CNSS, au ministère des Affaires sociales et à WIPO Lex.
+            </p>
+          </div>
+          <ul id="sources-list" class="sources-list"></ul>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="site-footer-inner">
+          <strong class="site-footer-brand">DROITO</strong>
+          <p class="site-footer-copy">Bibliothèque complète des droits des designers en Tunisie.</p>
+          <p class="site-footer-credit">Créateurs : <strong>[vos noms ici]</strong></p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="droits-data.js"></script>
+    <script src="droits.js"></script>
+  </body>
+</html>
